@@ -1,0 +1,34 @@
+﻿@model IEnumerable<SearchResult>
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<a class="btn btn-secondary" id="searchBackBtn" asp-controller="Home" asp-action="Index">Return to Search</a>
+<h2 id="searchHeading">Search Results - "@ViewBag.searchString"</h2>
+
+
+<div>
+    @foreach(var searchResult in Model)
+    {
+        <div class="resultCard">
+            <h3 class="resultCardTitle"><span>
+            @if (searchResult.SearchEngine == 0)
+            { 
+                <img class="seIcon" src="~/images/bing-icon.png" /> }
+            else
+            {
+                <img class="seIcon" src="~/images/yahoo-icon.png" /> 
+            }
+            </span>@searchResult.Title</h3>
+            
+            <h5 class="resultCardLink">@searchResult.Link</h5>
+            <p class="resultCardText">@searchResult.Description</p>
+            <a class="btn btn-primary" target="_blank" href="@searchResult.Link">Visit Link</a>
+        </div>
+    }
+</div>
+
+
+
+

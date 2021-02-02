@@ -1,0 +1,27 @@
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.csprojAssemblyReference.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.RazorAssemblyInfo.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.RazorAssemblyInfo.cs
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.AssemblyInfoInputs.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.AssemblyInfo.cs
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\bin\Debug\netcoreapp2.1\Blackdot Technical Test.deps.json
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\bin\Debug\netcoreapp2.1\Blackdot Technical Test.runtimeconfig.json
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\bin\Debug\netcoreapp2.1\Blackdot Technical Test.runtimeconfig.dev.json
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\bin\Debug\netcoreapp2.1\Blackdot Technical Test.dll
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\bin\Debug\netcoreapp2.1\Blackdot Technical Test.pdb
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\bin\Debug\netcoreapp2.1\Blackdot Technical Test.Views.dll
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\bin\Debug\netcoreapp2.1\Blackdot Technical Test.Views.pdb
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.TagHelpers.input.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.TagHelpers.output.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.RazorCoreGenerate.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.RazorTargetAssemblyInfo.cache
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.RazorTargetAssemblyInfo.cs
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.Views.pdb
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.dll
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.pdb
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Blackdot Technical Test.csproj.CopyComplete
+C:\Users\Daniel\source\repos\Blackdot Technical Test\Blackdot Technical Test\obj\Debug\netcoreapp2.1\Razor\Views\Home\Search.g.cshtml.cs
