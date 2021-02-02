@@ -1,4 +1,4 @@
-"# BlackdotTechnicalTest" 
+# BlackdotTechnicalTest
 
 I chose to use .NET Core MVC since that is what I usually work with.
 I chose Yahoo and Bing as the two search engines which I would be getting the results from.
