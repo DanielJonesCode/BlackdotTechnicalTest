@@ -17,6 +17,7 @@ namespace Blackdot_Technical_Test.Controllers
             return View();
         }
 
+        [HttpPost]
         public IActionResult Search(string searchString, int count)
         {
 
@@ -110,5 +111,21 @@ namespace Blackdot_Technical_Test.Controllers
 
             return View(searchResults);
         }
+
+        public FileContentResult Search(IEnumerable<SearchResult> results)
+        {
+            string csv = "";
+            foreach(var result in results)
+            {
+                if (result.IsChecked)
+                {
+                    csv += result.Title + "," + result.Link + ",";
+                }
+            }
+
+            return File(new System.Text.UTF8Encoding().GetBytes(csv), "text/csv", "SearchResults.csv");
+        }
     }
+
+
 }

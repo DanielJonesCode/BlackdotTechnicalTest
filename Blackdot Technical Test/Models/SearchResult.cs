@@ -11,5 +11,6 @@ namespace Blackdot_Technical_Test.Models
         public string Link { get; set; }
         public string Description { get; set; }
         public int SearchEngine { get; set; }
+        public bool IsChecked { get; set; }
     }
 }

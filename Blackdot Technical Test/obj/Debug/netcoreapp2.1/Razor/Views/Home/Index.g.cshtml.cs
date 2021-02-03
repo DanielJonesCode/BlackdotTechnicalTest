@@ -61,7 +61,7 @@ using Blackdot_Technical_Test.Models;
             WriteLiteral("\r\n<div id=\"homeHeader\"><h1>Daniel Jones - Blackdot Technical Test</h1></div>\r\n\r\n\r\n<div class=\"home-content\">\r\n    ");
             EndContext();
             BeginContext(114, 572, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa92570ce0a64ddf87e3d25cd41b5f16", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6c68b0b89bc45af97337feaef9262b1", async() => {
                 BeginContext(182, 314, true);
                 WriteLiteral(@"
         <input id=""homeSearchBar"" placeholder=""Search..."" name=""searchString"" />
@@ -72,7 +72,7 @@ using Blackdot_Technical_Test.Models;
                 ");
                 EndContext();
                 BeginContext(496, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74c0be07b7b543e1a057b8a6264816ae", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34c56df1825043719b93f9d98e1487ed", async() => {
                     BeginContext(515, 2, true);
                     WriteLiteral("20");
                     EndContext();
@@ -94,7 +94,7 @@ using Blackdot_Technical_Test.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(544, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd4400fa200d484691ab8352ea5d46bf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0fb06ed623174b29acab457b08a120e7", async() => {
                     BeginContext(563, 2, true);
                     WriteLiteral("40");
                     EndContext();
@@ -116,7 +116,7 @@ using Blackdot_Technical_Test.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(592, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5a083aab3a448b49c98a414f8c18091", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d94a73bd14ea4e769a235b1d697781b8", async() => {
                     BeginContext(612, 3, true);
                     WriteLiteral("100");
                     EndContext();

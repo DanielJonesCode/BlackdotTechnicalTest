@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SearchResult>
+﻿@model List<SearchResult>
 
 @{
     ViewData["Title"] = "Search";
@@ -7,28 +7,42 @@
 <a class="btn btn-secondary" id="searchBackBtn" asp-controller="Home" asp-action="Index">Return to Search</a>
 <h2 id="searchHeading">Search Results - "@ViewBag.searchString"</h2>
 
+<form>
 
-<div>
-    @foreach(var searchResult in Model)
-    {
+    <div>
+        @for (int i = 0; i < Model.Count; i++)
+        {
         <div class="resultCard">
-            <h3 class="resultCardTitle"><span>
-            @if (searchResult.SearchEngine == 0)
-            { 
-                <img class="seIcon" src="~/images/bing-icon.png" /> }
-            else
-            {
-                <img class="seIcon" src="~/images/yahoo-icon.png" /> 
-            }
-            </span>@searchResult.Title</h3>
-            
-            <h5 class="resultCardLink">@searchResult.Link</h5>
-            <p class="resultCardText">@searchResult.Description</p>
-            <a class="btn btn-primary" target="_blank" href="@searchResult.Link">Visit Link</a>
+            <h3 class="resultCardTitle">
+                <span>
+                    @if (Model[i].SearchEngine == 0)
+                    {
+                        <img class="seIcon" src="~/images/bing-icon.png" /> }
+                    else
+                    {
+                        <img class="seIcon" src="~/images/yahoo-icon.png" />
+                    }
+                </span>@Html.DisplayFor(x => Model[i].Title)
+            </h3>
+            <h5 class="resultCardLink">@Html.DisplayFor(x => Model[i].Link)</h5>
+
+            @Html.DisplayFor(x => Model[i].Description);
+
+            <br />
+            <hr class="resultCardHR" />
+            <a class="btn btn-primary resultCardLinkBtn" href="@Model[i].Link">Visit Link</a>
+
+            <label class="container">
+                Add to Download
+                <input asp-for="@Model[i].IsChecked" type="checkbox" />
+                <span class="checkmark"></span>
+            </label>
+
+            @Html.HiddenFor(x => Model[i].Link)
         </div>
-    }
-</div>
+        }
+    </div>
 
+    <input class="btn-primary" id="downloadLinksBtn" type="submit" value="Download Links" />
 
-
-
+</form>
