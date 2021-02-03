@@ -17,7 +17,7 @@ namespace Blackdot_Technical_Test.Controllers
             return View();
         }
 
-        public IActionResult Search(string searchString)
+        public IActionResult Search(string searchString, int count)
         {
 
             ViewBag.searchString = searchString;
@@ -27,33 +27,44 @@ namespace Blackdot_Technical_Test.Controllers
             using (WebClient client = new WebClient())
             {
 
-                
+                int runningCount = 1;
 
-                List<String> searchURLs = new List<string>()
+                while (runningCount < (count / 2))
                 {
-                    "https://www.bing.com/search?count=30&q=" + searchString,
-                    "https://uk.search.yahoo.com/search?b=10&p=" + searchString
-                };
 
-                foreach (string URL in searchURLs)
-                {
-                    string HtmlStr = client.DownloadString(URL);
-                    var HtmlDoc = new HtmlDocument();
-                    HtmlDoc.LoadHtml(HtmlStr);
-                    var results = HtmlDoc.DocumentNode.SelectNodes("//li");
-                    foreach (var result in results)
+                    List<String> searchURLs = new List<string>()
                     {
-                        if (result.OuterHtml.Contains("b_algo") || result.InnerHtml.Contains("algo-sr"))
+                        "https://www.bing.com/search?&q=" + searchString + "&first=" + runningCount,
+                        "https://uk.search.yahoo.com/search?p=" + searchString + "&b=" + runningCount
+                    };
+
+                    foreach (string URL in searchURLs)
+                    {
+                        string HtmlStr = "";
+                        HtmlStr = client.DownloadString(URL);
+                        var HtmlDoc = new HtmlDocument();
+                        HtmlDoc.LoadHtml(HtmlStr);
+                        var results = HtmlDoc.DocumentNode.SelectNodes("//li");
+                        foreach (var result in results)
                         {
-                            SearchResult sr = new SearchResult();
-                            sr.Title = result.SelectSingleNode(".//a").InnerText;
-                            sr.Link = result.SelectSingleNode(".//a").Attributes["href"].Value;
-                            sr.Description = result.SelectSingleNode(".//p").InnerText;
-                            sr.SearchEngine = searchURLs.IndexOf(URL);
-                            searchResults.Add(sr);
+                            if (result.OuterHtml.Contains("b_algo") || result.InnerHtml.Contains("algo-sr"))
+                            {
+                                SearchResult sr = new SearchResult();
+                                sr.Title = result.SelectSingleNode(".//a").InnerText;
+                                sr.Link = result.SelectSingleNode(".//a").Attributes["href"].Value;
+                                sr.Description = result.SelectSingleNode(".//p").InnerText;
+                                sr.SearchEngine = searchURLs.IndexOf(URL);
+                                searchResults.Add(sr);
+                            }
                         }
                     }
+
+                    runningCount += 10;
                 }
+
+
+
+
 
                 ////YAHOO
                 //string yahooStr = "https://uk.search.yahoo.com/search?n=30&p=" + searchString;

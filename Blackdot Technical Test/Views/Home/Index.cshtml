@@ -6,6 +6,15 @@
     <form id="homeSearchForm" asp-controller="Home" asp-action="Search">
         <input id="homeSearchBar" placeholder="Search..." name="searchString" />
         <input class="btn-primary" id="homeSearchBtn" type="submit" value="Search" />
+        <div id="countSelect">
+            <label for="count">Number of results: </label>
+            <select name="count">
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        
     </form>
 </div>
 

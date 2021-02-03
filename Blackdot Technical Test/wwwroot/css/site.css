@@ -49,6 +49,11 @@
     vertical-align: middle;
 }
 
+#countSelect {
+    display: block;
+    margin: 5px;
+}
+
 #searchHeading {
     margin: 10px 0 10px 3%;
 }
